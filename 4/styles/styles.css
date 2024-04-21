@@ -1,0 +1,247 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-brown {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(117, 97, 87, 1);
+}
+
+.button-blue {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(130, 179, 211, 1);
+}
+
+.button-green {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(125, 181, 79, 1);
+}
+
+.button-transparent {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.navigation-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.navigation-item .navigation-text-link {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.navigation-item .navigation-icon-link{
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+/*MAIN PAGE*/
+
+.hero {
+  background-image: url("../images/hero-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.divider {
+  background-image: url("../images/divider.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.introduction {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.transition {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-description{
+  text-align: center;
+}
+
+.advantage-authenticity, .advantage-bridge {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(130, 179, 211, 1);
+}
+
+.advantages-item:first-child, .advantages-item:last-child {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(2) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item .advantages-description {
+  color: rgba(0, 0, 0, 1);
+}
+
+.offers-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.offers-description {
+  text-align: center;
+}
+
+.offers-item:first-child, .offers-item:last-child {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.hotel-search .button {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.newsletter-with-background {
+  background-image: url("../images/subscribe-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.newsletter-with-background p {
+  color: rgba(255, 255, 255, 1);
+}
+
+.newsletter .button {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.contacts address {
+  text-align: center;
+}
+
+.contacts address a {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+
+/*CATALOG PAGE*/
+
+.header-filter-background {
+  background-image: url("../images/filter-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-header, .hotel-filter {
+  color: rgba(255, 255, 255, 1);
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-item {
+  font-size: 16px;
+}
+
+.hotel-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.hotel-filter-item .control {
+  line-height: 23px;
+}
+
+.hotel-filter h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+}
+
+.hotel-cards-item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.hotel-cards-item .rate {
+  line-height: 20px;
+  background-color: rgba(242, 242, 242, 1);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-item .pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.pagination-item .current {
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(242, 242, 242, 1);
+}
