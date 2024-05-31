@@ -81,9 +81,14 @@ body {
   background-color: transparent;
 }
 
+.wrapper-nav-user .button {
+  padding: 8px 34px;
+}
+
 .page-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 1060px;
   margin: 0 auto;
 }
@@ -107,8 +112,12 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  align-items: center;
 }
 
 .navigation-pages {
@@ -126,11 +135,15 @@ body {
 }
 
 .navigation-item .navigation-text-link {
+  padding: 20px 16px;
   color: #000000;
   text-decoration: none;
 }
 
 .navigation-item .navigation-icon-link{
+  padding: 22px 12px;
+  min-width: 20px;
+  min-height: 20px;
   color: #000000;
   text-decoration: none;
 }
@@ -371,10 +384,23 @@ body {
   font-size: 60px;
   line-height: 78px;
   margin: 0;
+  margin-bottom: 8px;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .breadcrumbs-item {
   font-size: 16px;
+}
+
+.breadcrumbs-link {
+  margin-right: 28px;
 }
 
 .hotel-filter form{
@@ -403,8 +429,20 @@ body {
   line-height: 24px;
 }
 
+.hotel-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .hotel-filter-item .control {
   line-height: 23px;
+}
+
+.restriction-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .hotel-filter h2 {
@@ -415,16 +453,26 @@ body {
   text-transform: uppercase;
 }
 
-.found-hotels-filter {
+.sorting-hotels-filter {
   width: 1060px;
   padding-top: 50px;
   margin: 0 auto;
   padding-bottom: 20px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
-.hotels-found-title {
+.sorting-hotels-filter .selection-content {
+  height: 48px;
+}
+
+.sorting-hotels-filter .button {
+  width: 48px;
+  height: 48px;
+  background-color: #756157;
+}
+
+.sorting-found-title {
   text-transform: uppercase;
 }
 
@@ -437,6 +485,8 @@ body {
 
 .hotel-cards-list {
   margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .hotel-cards-item h3 {
@@ -462,12 +512,28 @@ body {
 }
 
 .pagination-list {
+  display: flex;
   margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item {
+  margin-right: 8px;
+}
+
+.pagination-item:last-child {
+  margin-right: 8px;
 }
 
 .pagination-item .pagination-link {
   font-size: 20px;
   line-height: 36px;
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 11px 23px;
 }
 
 .pagination-item .current {
@@ -480,10 +546,24 @@ body {
   padding: 40px 70px 30px 70px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .socials {
   width: 142px;
+}
+
+.socials-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-item {
+  width: 47px;
+  height: 40px;
 }
 
 .contacts {
