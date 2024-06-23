@@ -878,10 +878,11 @@ body {
   height: 40px;
 }
 
-.social-item a {
+.social-item .social-link {
   position: relative;
   display: block;
-  padding: 20px 12px;
+  min-width: 47px;
+  min-height: 40px;
 }
 
 .social-icon{
