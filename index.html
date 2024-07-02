@@ -17,7 +17,7 @@
               <a class="navigation-text-link">Главная</a>
             </li>
             <li class="navigation-item">
-              <a  href="#" class="navigation-text-link">О седоне</a>
+              <a  href="#" class="navigation-text-link">О Cедоне</a>
             </li>
             <li class="navigation-item">
               <a href="catalog.html" class="navigation-text-link">Гостиницы</a>
@@ -169,6 +169,48 @@
           </a>
         </section>
       </footer>
+    </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="field-group field-group-arrival-date">
+              <label for="arrival-date">Дата Заезда:</label>
+              <input name="arrival-date" type="text" placeholder="Укажите дату" id="arrival-date" required/>
+              <span class="message error-message">Мы не можем отправить вас в прошлое.</span>
+            </p>
+            <p class="field-group field-group-departure-date">
+              <label for="departure-date">Дата Выезда:</label>
+              <input name="departure-date" type="text" placeholder="Укажите дату" id="departure-date" required/>
+              <span class="message">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <p class="field-group field-group-people field-group-adults">
+              <label for="adults">Взрослые:</label>
+              <input name="number-adults" type="number" id="adults" value="2" required/>
+              <button class="button add-person-count"></button>
+              <button class="button delete-person-count"></button>
+            </p>
+            <p class="field-group field-group-people field-group-children">
+              <label for="children">
+                Дети:
+              </label>
+              <span class="tooltip">
+                <button class="button tooltip-button tooltip-toggle" aria-labelledby="tooltip-label-children">
+                </button>
+                <span class="tooltip-text" id="tooltip-label-children" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+              <input name="number-children" type="number" id="children" value="2"/>
+              <button class="button add-person-count"></button>
+              <button class="button delete-person-count"></button>
+            </p>
+            <button type="submit" class="button button-blue search-form-button">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>

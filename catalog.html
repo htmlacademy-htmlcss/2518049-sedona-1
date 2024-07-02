@@ -17,7 +17,7 @@
             <a href="index.html" class="navigation-text-link">Главная</a>
           </li>
           <li class="navigation-item">
-            <a  href="#" class="navigation-text-link">О седоне</a>
+            <a  href="#" class="navigation-text-link">О Cедоне</a>
           </li>
           <li class="navigation-item current">
             <a class="navigation-text-link">Гостиницы</a>
@@ -47,7 +47,7 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">
+              <a class="breadcrumbs-link breadcrumbs-link-main" href="index.html">
                 <span class="visually-hidden">Главная</span>
               </a>
             </li>
@@ -65,66 +65,75 @@
                 <ul class="hotel-filter-list">
                   <li class="hotel-filter-item">
                     <label class="control">
-                      <input type="checkbox" name="pool" id="pool" checked>
-                      Бассейн
+                      <input type="checkbox" name="pool" id="pool" class="visually-hidden control-input" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-text">Бассейн</span>
                     </label>
                   </li>
                   <li class="hotel-filter-item">
                     <label class="control">
-                      <input type="checkbox" name="parking" id="parking" checked>
-                      Парковка
+                      <input type="checkbox" name="parking" id="parking" class="visually-hidden control-input" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-text">Парковка</span>
                     </label>
                   </li>
                   <li class="hotel-filter-item">
                     <label class="control">
-                      <input type="checkbox" name="wifi" id="wifi">
-                      Wi-Fi
+                      <input type="checkbox" name="wifi" id="wifi" class="visually-hidden control-input">
+                      <span class="control-mark"></span>
+                      <span class="control-text">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="hotel-filter-group">
-                <legend class="hotel-filter-title">Тип жилья:</legend>
+                <legend class="hotel-filter-title">Тип Жилья:</legend>
                 <ul class="hotel-filter-list">
                   <li class="hotel-filter-item">
                     <label class="control">
-                      <input type="radio" name="housing" value="hotel" checked>
-                      Гостиница
+                      <input type="radio" name="housing" value="hotel" class="visually-hidden control-input" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-text">Гостиница</span>
                     </label>
                   </li>
                   <li class="hotel-filter-item">
                     <label class="control">
-                      <input type="radio" name="housing" value="motel">
-                      Мотель
+                      <input type="radio" name="housing" value="motel" class="visually-hidden control-input">
+                      <span class="control-mark"></span>
+                      <span class="control-text">Мотель</span>
                     </label>
                   </li>
                   <li class="hotel-filter-item">
                     <label class="control">
-                      <input type="radio" name="housing" value="apartment">
-                      Апартаменты
+                      <input type="radio" name="housing" value="apartment" class="visually-hidden control-input">
+                      <span class="control-mark"></span>
+                      <span class="control-text">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
             </div>
             <div class="hotel-filter-group-wrapper">
-              <fieldset class="hotel-filter-group">
+              <fieldset class="hotel-filter-group hotel-filter-group-price">
                 <legend class="hotel-filter-title">Стоимость, ₽:</legend>
-                <ul class="restriction-list">
-                  <li class="restriction-item">
-                    <label>
-                      <input type="text" name="lowest-price">
-                      от
+                    <label for="min-price" class="restriction-lable-price restriction-label-min-price">
+                      <span>от</span>
+                      <input id="min-price" type="number" name="min-price" value="0">
                     </label>
-                  </li>
-                  <li class="restriction-item">
-                    <label>
-                      <input type="text" name="highest-price">
-                      до
+                    <label for="max-price" class="restriction-lable-price restriction-label-max-price">
+                      <span>до</span>
+                      <input id="max-price" type="number" name="max-price" value="9000">
                     </label>
-                  </li>
-                </ul>
-                <input type="range" name="price-restrictions">
+                <div class="range-scale">
+                  <div class="range-bar" style="left:0; width: 226px">
+                    <button class=" button range-toggle toggle-min" style="left: 0;">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="button range-toggle toggle-max" style="left: 206px;">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
               </fieldset>
               <div class="filter-button-wrapper">
                 <button type="submit" class="button button-blue">Применить</button>
@@ -136,11 +145,13 @@
       </div>
       <section class="sorting-hotels-filter">
         <h2 class="sorting-found-title">Найдено гостиниц: 38</h2>
-        <select class="selection-content" aria-label="Сортировка отелей">
-          <option>Сначала дешевые</option>
-          <option>Сначала догорие</option>
-          <option>Сначала популярные</option>
-        </select>
+        <div class="selection">
+          <select class="selection-content" aria-label="Сортировка отелей">
+            <option>Сначала дешевые</option>
+            <option>Сначала дорогие</option>
+            <option>Сначала популярные</option>
+          </select>
+        </div>
         <div class="cards-visual">
           <a href="#" class="button button-grid active">
             <span class="visually-hidden">Показать карточки</span>
