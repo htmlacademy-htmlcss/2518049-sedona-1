@@ -79,7 +79,7 @@
           </section>
           <section class="advantage-bridge">
             <div class="description-wrapper">
-              <h3 class="advantages-title">Там есть
+              <h3 class="advantages-title">Там есть<br>
                 мост дьявола</h3>
               <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
@@ -93,17 +93,17 @@
           <ul class="offers-list list">
             <li class="offers-item-accomodation offers-item item">
               <h3 class="offers-title">Жильё</h3>
-              <p class="offers-description">Рекомендуем пожить в настоящем мотеле,
+              <p class="offers-description">Рекомендуем пожить <br> в настоящем мотеле, <br>
                 всё как в кино!</p>
             </li>
             <li class="offers-item-food offers-item item">
               <h3 class="offers-title">Еда</h3>
-              <p class="offers-description">Всегда заказывайте
+              <p class="offers-description">Всегда заказывайте<br>
                 топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="offers-item-souvenirs offers-item item">
               <h3 class="offers-title">Сувениры</h3>
-              <p class="offers-description">Не только китайского,
+              <p class="offers-description">Не только китайского,<br>
                 но и настоящего местного производства!</p>
             </li>
           </ul>
@@ -172,7 +172,7 @@
     </div>
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">закрыть</span>
         </button>
         <section class="modal-content">
@@ -191,8 +191,12 @@
             <p class="field-group field-group-people field-group-adults">
               <label for="adults">Взрослые:</label>
               <input name="number-adults" type="number" id="adults" value="2" required/>
-              <button class="button add-person-count"></button>
-              <button class="button delete-person-count"></button>
+              <button class="button add-person-count" type="button">
+                <span class="visually-hidden">Добавить одного взрослого</span>
+              </button>
+              <button class="button delete-person-count" type="button">
+                <span class="visually-hidden">Удалить одного взрослого</span>
+              </button>
             </p>
             <p class="field-group field-group-people field-group-children">
               <label for="children">
@@ -204,8 +208,12 @@
                 <span class="tooltip-text" id="tooltip-label-children" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               </span>
               <input name="number-children" type="number" id="children" value="2"/>
-              <button class="button add-person-count"></button>
-              <button class="button delete-person-count"></button>
+              <button class="button add-person-count" type="button">
+                <span class="visually-hidden">Добавить одного ребенка</span>
+              </button>
+              <button class="button delete-person-count" type="button">
+                <span class="visually-hidden">Удалить одного ребенка</span>
+              </button>
             </p>
             <button type="submit" class="button button-blue search-form-button">Найти</button>
           </form>
