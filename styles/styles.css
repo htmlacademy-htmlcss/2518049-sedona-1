@@ -881,6 +881,10 @@ body {
   margin: 0;
 }
 
+.restriction-lable-price input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .restriction-label-min-price input {
   border-radius: 4px 0 0 4px;
 }
@@ -1112,8 +1116,8 @@ body {
 .hotel-cards-item .rate {
   font-size: 16px;
   line-height: 20px;
-  min-width: 95px;
-  padding: 8px 22px 8px 23px;
+  min-width: 99px;
+  padding: 8px 20px 8px 21px;
   background-color: #f2f2f2;
   text-align: center;
   text-transform: uppercase;
@@ -1475,6 +1479,10 @@ body {
 .field-group-people input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   appearance: none;
+}
+
+.field-group-people input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .field-group-adults input {
