@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link href="styles/styles.css" rel="stylesheet">
   </head>
   <body>
@@ -45,8 +45,8 @@
       <main class="main-index main-container">
         <h1 class="main-title visually-hidden">Городок Седона</h1>
         <section class="hero">
-            <h2 class="visually-hidden">Введение</h2>
-            <img class="intro-text-image" src="images/welcome-text.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону потому что Гран Каньон надоел">
+          <h2 class="visually-hidden">Введение</h2>
+          <img class="intro-text-image" src="images/welcome-text.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону потому что Гран Каньон надоел">
         </section>
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
@@ -62,18 +62,15 @@
           <section class="advantages-area-road-tourists">
             <ul class="advantages-list list">
               <li class="advantages-item item">
-                <h3 class="advantages-title">Небольшая
-                  площадь</h3>
+                <h3 class="advantages-title">Небольшая площадь</h3>
                 <p class="advantages-description">Все достопримечательности находятся очень близко</p>
               </li>
               <li class="advantages-item item">
-                <h3 class="advantages-title">Красивая<br>
-                  дорога</h3>
+                <h3 class="advantages-title">Красивая<br> дорога</h3>
                 <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </li>
               <li class="advantages-item item">
-                <h3 class="advantages-title">Мало<br>
-                  туристов</h3>
+                <h3 class="advantages-title">Мало<br> туристов</h3>
                 <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
               </li>
             </ul>
@@ -120,7 +117,7 @@
           <p class="introduction">Подпишитесь на рассылку</p>
           <p class="transition">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input name="email" type="email" placeholder="Ваш e-mail">
+            <input name="email" type="email" placeholder="Ваш e-mail" required>
             <button class="button button-blue" type="submit">Подписаться</button>
           </form>
         </section>
@@ -204,7 +201,7 @@
                 Дети:
               </label>
               <span class="tooltip">
-                <button class="button tooltip-button tooltip-toggle" aria-labelledby="tooltip-label-children">
+                <button class="button tooltip-button tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
                 </button>
                 <span class="tooltip-text" id="tooltip-label-children" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               </span>
